@@ -7,7 +7,10 @@
                 <img class="rounded-circle" width="100%" src="{{url('img/nasa_jovian.bmp')}}">
             </div>
             <div class="col-9 pt-3">
-                <div><h1>{{ Auth::user()->username }}</h1></div>
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <h1>{{ Auth::user()->username }}</h1>
+                    <a href="#">add new post</a>
+                </div>
                 <div style="display: flex">
                     <div class="pr-4"><strong>few </strong>posts</div>
                     <div class="pr-4"><strong>many </strong>followers</div>

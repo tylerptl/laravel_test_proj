@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="238941cd-1636-4c2b-afbc-cc32f3e56734" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,16 +157,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asdf\freeCodeGram\resources\views\profiles" />
       <recent name="C:\Users\asdf\freeCodeGram\public\img" />
       <recent name="C:\Users\asdf\freeCodeGram\public\img\zoe2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asdf\freeCodeGram\resources\views\posts" />
     </key>
   </component>
   <component name="RunManager">
@@ -175,14 +201,32 @@
       <workItem from="1599162942929" duration="638000" />
       <workItem from="1599225371244" duration="595000" />
       <workItem from="1599314525080" duration="1786000" />
-      <workItem from="1599439283685" duration="4045000" />
+      <workItem from="1599439283685" duration="6151000" />
+      <workItem from="1599791364745" duration="1573000" />
+      <workItem from="1599867624153" duration="3063000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="1196" y="348" key="#Notifications" timestamp="1599517644244">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1196" y="348" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1599517644244" />
     <state x="226" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598820662561">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -211,13 +255,13 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1044" y="190" width="612" height="1031" key="dock-window-1/0.0.1920.1050@0.0.1920.1050" timestamp="1598898001845" />
-    <state x="188" y="104" width="583" height="849" key="find.popup" timestamp="1598825722327">
+    <state x="742" y="201" width="675" height="849" key="find.popup" timestamp="1599517824061">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="188" y="104" width="583" height="849" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598825722327" />
-    <state x="143" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1598974214334">
+    <state x="742" y="201" width="675" height="849" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599517824061" />
+    <state x="143" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1599869497691">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="143" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598974214334" />
+    <state x="143" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599869497691" />
   </component>
 </project>
