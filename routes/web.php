@@ -20,9 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/p/{post}', 'PostsController@show');
 Route::get('/p/create', 'PostsController@create');
 Route::post('/p', 'PostsController@store');
+Route::get('/p/{post}', 'PostsController@show');    // '/p/{post} will conflict with /p/___ as it takes anything after /p/. Fix by moving it down.
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');    // shows edit form
