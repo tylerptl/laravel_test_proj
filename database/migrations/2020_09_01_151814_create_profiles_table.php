@@ -20,7 +20,7 @@ class CreateProfilesTable extends Migration
             $table->string('title')->nullable();
             $table->text('description')->nullable();
             $table->string('url')->nullable();
-//            $table->binary('image')->nullable();
+            $table->string('image')->nullable();
             $table->index('user_id');   // represents FK
         });
     }

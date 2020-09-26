@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-3 pb-5" >
-                <img class="rounded-circle" width="100%" src="{{url('img/nasa_jovian.bmp')}}">
+                <img class="rounded-circle w-100" width="100%" src="{{$user->profile->profileImage()}}">
             </div>
             <div class="col-9 pt-3">
                 <div class="d-flex justify-content-between align-items-baseline">
