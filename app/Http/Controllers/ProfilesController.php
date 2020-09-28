@@ -11,10 +11,13 @@ class ProfilesController extends Controller
     //
     public function index(User $user)
     {
+        // Does the authenticated users followers contain the user that has been passed in?
+        $follows = (auth()->user() ? auth()->user()->following->contains($user->id) : false);
 //        $user = User::findOrFail($user);
 //        dd($user);
 //        $user = User::findOrFail($user); Passing in \App\User lets laravel find/fail the user search for us
-        return view('profiles.index', compact('user'));
+//        dd($follows);
+        return view('profiles.index', compact('user', 'follows'));
     }
 
     public function edit(User $user){

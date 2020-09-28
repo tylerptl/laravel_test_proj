@@ -1916,12 +1916,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['userId', 'follows'],
   mounted: function mounted() {
     console.log('Component mounted.');
   },
+  data: function data() {
+    return {
+      status: this.follows
+    };
+  },
   methods: {
     followUser: function followUser() {
-      alert("method test 1");
+      var _this = this;
+
+      // alert("Followed user")
+      axios.post('/follow/' + this.userId).then(function (response) {
+        _this.status = !_this.status;
+      });
+    }
+  },
+  computed: {
+    buttonText: function buttonText() {
+      return this.status ? 'Unfollow' : 'Follow';
     }
   }
 });
@@ -37511,11 +37527,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c(
-      "button",
-      { staticClass: "btn btn-primary ml-4 ", on: { click: _vm.followUser } },
-      [_vm._v("Follow")]
-    )
+    _c("button", {
+      staticClass: "btn btn-primary ml-4 ",
+      domProps: { textContent: _vm._s(_vm.buttonText) },
+      on: { click: _vm.followUser }
+    })
   ])
 }
 var staticRenderFns = []
