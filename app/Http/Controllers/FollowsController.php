@@ -6,10 +6,14 @@ use Illuminate\Http\Request;
 use App\User;
 class FollowsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');  // Will prevent null error when users who are not logged in follow someone
+    }
+
     public function store(User $user){
         //Grab authenticated user
-
-
 
         return auth()->user()->following()->toggle($user->profile);
     }
