@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Auth::routes();
-
+Route::get('/email', function() {
+   return new \App\Mail\NewUserWelcomeMail();
+});
 Route::post('follow/{user}', 'FollowsController@store');
 //Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'Postscontroller@index');
